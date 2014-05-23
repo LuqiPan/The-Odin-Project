@@ -1,7 +1,8 @@
 setence = ''
 
 while setence != 'BYE'
-	if setence != ''
+	setence = gets.chomp
+	if setence != 'BYE'
 		if setence != setence.upcase
 			puts 'HUH?!	SPEAK UP, SONNY!'
 		else
@@ -9,5 +10,6 @@ while setence != 'BYE'
 			puts "NO, NOT SINCE #{year.to_s}!"
 		end
 	end
-	setence = gets.chomp
 end
+
+puts "GOODBYE, SONNY!"
